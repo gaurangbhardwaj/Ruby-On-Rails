@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  atmlocation: MyString
+  availablecash: 1
+  runningos: MyString
+
+two:
+  atmlocation: MyString
+  availablecash: 1
+  runningos: MyString

@@ -1,0 +1,1389 @@
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (93.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (140.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateAtminfos (20180903101202)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "atminfos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "atmlocation" varchar, "availablecash" integer, "runningos" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180903101202_create_atminfos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180903101202"]]
+  ↳ bin/rails:4
+  [1m[35m (93.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (15.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-03 10:13:25.854990"], ["updated_at", "2018-09-03 10:13:25.854990"]]
+  ↳ bin/rails:4
+  [1m[35m (78.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAtminfo Create (0.0ms)[0m  [1m[32mINSERT INTO "atminfos" ("atmlocation", "availablecash", "runningos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["atmlocation", "Delhi"], ["availablecash", 67800], ["runningos", "redhatlinux"], ["created_at", "2018-09-03 10:15:56.285948"], ["updated_at", "2018-09-03 10:15:56.285948"]]
+  [1m[35m (78.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAtminfo Create (0.0ms)[0m  [1m[32mINSERT INTO "atminfos" ("atmlocation", "availablecash", "runningos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["atmlocation", "Jalandhar"], ["availablecash", 56500], ["runningos", "redhatlinux"], ["created_at", "2018-09-03 10:16:22.852126"], ["updated_at", "2018-09-03 10:16:22.852126"]]
+  [1m[35m (93.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAtminfo Create (0.0ms)[0m  [1m[32mINSERT INTO "atminfos" ("atmlocation", "availablecash", "runningos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["atmlocation", "Chaheru"], ["availablecash", 89800], ["runningos", "Windows98"], ["created_at", "2018-09-03 10:17:16.885489"], ["updated_at", "2018-09-03 10:17:16.885489"]]
+  [1m[35m (109.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT  "atminfos".* FROM "atminfos" ORDER BY "atminfos"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT  "atminfos".* FROM "atminfos" ORDER BY "atminfos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to ChangeColumnName (20180903102218)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to ChangeColumnName (20180903102218)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to ChangeColumnName (20180903102218)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180903102218_change_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aatminfos" ("id" integer NOT NULL PRIMARY KEY, "atmlocation" varchar DEFAULT NULL, "availablecash" integer DEFAULT NULL, "os" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180903102218_change_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aatminfos" ("id","atmlocation","availablecash","os","created_at","updated_at")
+                     SELECT "id","atmlocation","availablecash","runningos","created_at","updated_at" FROM "atminfos"[0m
+  ↳ db/migrate/20180903102218_change_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "atminfos"[0m
+  ↳ db/migrate/20180903102218_change_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "atminfos" ("id" integer NOT NULL PRIMARY KEY, "atmlocation" varchar DEFAULT NULL, "availablecash" integer DEFAULT NULL, "os" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180903102218_change_column_name.rb:3
+  [1m[35m (15.6ms)[0m  [1m[32mINSERT INTO "atminfos" ("id","atmlocation","availablecash","os","created_at","updated_at")
+                     SELECT "id","atmlocation","availablecash","os","created_at","updated_at" FROM "aatminfos"[0m
+  ↳ db/migrate/20180903102218_change_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "aatminfos"[0m
+  ↳ db/migrate/20180903102218_change_column_name.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180903102218"]]
+  ↳ bin/rails:4
+  [1m[35m (93.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT  "atminfos".* FROM "atminfos" ORDER BY "atminfos"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT  "atminfos".* FROM "atminfos" ORDER BY "atminfos"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mAtminfo Load (15.6ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+Started GET "/" for 127.0.0.1 at 2018-09-10 15:46:01 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (31.3ms)
+Completed 200 OK in 344ms (Views: 200.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/atminfos" for 127.0.0.1 at 2018-09-10 15:46:20 +0530
+  
+ActionController::RoutingError (uninitialized constant AtminfosController):
+  
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `block in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `rescue in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:42:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/atminfos" for 127.0.0.1 at 2018-09-10 16:02:19 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/atminfos"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/atminfo" for 127.0.0.1 at 2018-09-10 16:02:44 +0530
+  
+ActionController::RoutingError (uninitialized constant AtminfoController):
+  
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `block in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `rescue in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:42:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/atminfo" for 127.0.0.1 at 2018-09-10 16:07:50 +0530
+  
+ActionController::RoutingError (uninitialized constant AtminfoController):
+  
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `block in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `rescue in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:42:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/atminfo" for 127.0.0.1 at 2018-09-10 16:09:18 +0530
+Processing by AtmcontrollerController#index as HTML
+  Rendering atmcontroller/index.html.erb within layouts/application
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  ↳ app/views/atmcontroller/index.html.erb:13
+  Rendered atmcontroller/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 2641ms (Views: 2609.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-26 11:39:19 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (9.9ms)
+Completed 200 OK in 170ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/atminfos" for 127.0.0.1 at 2018-09-26 11:39:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/atminfos"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/atminfo" for 127.0.0.1 at 2018-09-26 11:39:48 +0530
+Processing by AtmcontrollerController#index as HTML
+  Rendering atmcontroller/index.html.erb within layouts/application
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  ↳ app/views/atmcontroller/index.html.erb:13
+  Rendered atmcontroller/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 1104ms (Views: 1057.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  [1m[36mAtminfo Load (0.0ms)[0m  [1m[34mSELECT "atminfos".* FROM "atminfos"[0m
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateCinfras (20180926095052)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180926095052_create_cinfras.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "cinfras" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item_name" varchar, "quantity" integer, "manufacturer" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180926095052_create_cinfras.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180926095052"]]
+  ↳ bin/rails:4
+  [1m[35m (171.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCinfra Create (31.2ms)[0m  [1m[32mINSERT INTO "cinfras" ("item_name", "quantity", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_name", "Window A/C"], ["quantity", 2], ["manufacturer", "Hitachi"], ["created_at", "2018-09-26 10:04:35.274955"], ["updated_at", "2018-09-26 10:04:35.274955"]]
+  [1m[35m (93.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCinfra Create (0.0ms)[0m  [1m[32mINSERT INTO "cinfras" ("item_name", "quantity", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_name", "Ceiling Fan"], ["quantity", 8], ["manufacturer", "Crompton"], ["created_at", "2018-09-26 10:05:18.587454"], ["updated_at", "2018-09-26 10:05:18.587454"]]
+  [1m[35m (125.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCinfra Create (0.0ms)[0m  [1m[32mINSERT INTO "cinfras" ("item_name", "quantity", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_name", "Desk Podium"], ["quantity", 1], ["manufacturer", "Greenply"], ["created_at", "2018-09-26 10:05:50.392643"], ["updated_at", "2018-09-26 10:05:50.392643"]]
+  [1m[35m (140.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to ShowCinfraDetails (20180926100708)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180926100708"]]
+  ↳ bin/rails:4
+  [1m[35m (93.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/cinfra" for 127.0.0.1 at 2018-09-26 15:44:42 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 2156ms (Views: 2105.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to ChangeCinfraColumnName (20180926101706)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180926101706_change_cinfra_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acinfras" ("id" integer NOT NULL PRIMARY KEY, "item_name" varchar DEFAULT NULL, "quantity" integer DEFAULT NULL, "producer" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180926101706_change_cinfra_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acinfras" ("id","item_name","quantity","producer","created_at","updated_at")
+                     SELECT "id","item_name","quantity","manufacturer","created_at","updated_at" FROM "cinfras"[0m
+  ↳ db/migrate/20180926101706_change_cinfra_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "cinfras"[0m
+  ↳ db/migrate/20180926101706_change_cinfra_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "cinfras" ("id" integer NOT NULL PRIMARY KEY, "item_name" varchar DEFAULT NULL, "quantity" integer DEFAULT NULL, "producer" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180926101706_change_cinfra_column_name.rb:3
+  [1m[35m (15.6ms)[0m  [1m[32mINSERT INTO "cinfras" ("id","item_name","quantity","producer","created_at","updated_at")
+                     SELECT "id","item_name","quantity","producer","created_at","updated_at" FROM "acinfras"[0m
+  ↳ db/migrate/20180926101706_change_cinfra_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "acinfras"[0m
+  ↳ db/migrate/20180926101706_change_cinfra_column_name.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180926101706"]]
+  ↳ bin/rails:4
+  [1m[35m (171.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mCinfra Load (15.6ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+Started GET "/cinfra" for 127.0.0.1 at 2018-09-26 15:49:45 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 562ms (Views: 513.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to ChangeCinfraColumnName (20181001095113)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181001095113_change_cinfra_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acinfras" ("id" integer NOT NULL PRIMARY KEY, "item_name" varchar DEFAULT NULL, "quantity" integer DEFAULT NULL, "manufacturer" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181001095113_change_cinfra_column_name.rb:3
+  [1m[35m (15.7ms)[0m  [1m[32mINSERT INTO "acinfras" ("id","item_name","quantity","manufacturer","created_at","updated_at")
+                     SELECT "id","item_name","quantity","producer","created_at","updated_at" FROM "cinfras"[0m
+  ↳ db/migrate/20181001095113_change_cinfra_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "cinfras"[0m
+  ↳ db/migrate/20181001095113_change_cinfra_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "cinfras" ("id" integer NOT NULL PRIMARY KEY, "item_name" varchar DEFAULT NULL, "quantity" integer DEFAULT NULL, "manufacturer" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181001095113_change_cinfra_column_name.rb:3
+  [1m[35m (15.6ms)[0m  [1m[32mINSERT INTO "cinfras" ("id","item_name","quantity","manufacturer","created_at","updated_at")
+                     SELECT "id","item_name","quantity","manufacturer","created_at","updated_at" FROM "acinfras"[0m
+  ↳ db/migrate/20181001095113_change_cinfra_column_name.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "acinfras"[0m
+  ↳ db/migrate/20181001095113_change_cinfra_column_name.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181001095113"]]
+  ↳ bin/rails:4
+  [1m[35m (140.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+Started GET "/" for 127.0.0.1 at 2018-10-01 15:27:14 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (15.6ms)
+Completed 200 OK in 234ms (Views: 131.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 15:27:48 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 1285ms (Views: 1238.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCinfra Create (0.0ms)[0m  [1m[32mINSERT INTO "cinfras" ("id", "item_name", "quantity", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 4], ["item_name", "Projecter"], ["quantity", 1], ["manufacturer", "Epson"], ["created_at", "2018-10-01 09:59:46.562883"], ["updated_at", "2018-10-01 09:59:46.562883"]]
+  [1m[35m (140.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 15:29:55 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 221ms (Views: 175.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 15:36:26 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 219ms (Views: 179.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 15:36:30 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 234ms (Views: 200.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 15:36:47 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 234ms (Views: 199.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/AddNewRecord" for 127.0.0.1 at 2018-10-01 15:36:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/AddNewRecord"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 15:36:52 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 2508ms (Views: 1618.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 15:44:54 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 219ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/addnewrecord.html.erb" for 127.0.0.1 at 2018-10-01 15:44:57 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addnewrecord.html.erb"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/addnewrecord.html.erb" for 127.0.0.1 at 2018-10-01 15:48:10 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addnewrecord.html.erb"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 15:48:12 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 219ms (Views: 185.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/addnewrecord.html.erb" for 127.0.0.1 at 2018-10-01 15:48:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addnewrecord.html.erb"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/addnewrecord.html.erb" for 127.0.0.1 at 2018-10-01 15:50:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addnewrecord.html.erb"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/addnewrecord.html.erb" for 127.0.0.1 at 2018-10-01 15:56:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addnewrecord.html.erb"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/addnewrecord.html.erb" for 127.0.0.1 at 2018-10-01 15:59:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addnewrecord.html.erb"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/addnewrecord.html.erb" for 127.0.0.1 at 2018-10-01 16:06:19 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addnewrecord.html.erb"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/addnewrecord.html.erb" for 127.0.0.1 at 2018-10-01 16:07:04 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addnewrecord.html.erb"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/addnewrecord.html.erb" for 127.0.0.1 at 2018-10-01 16:07:08 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/addnewrecord.html.erb"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-01 16:08:00 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 125ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 16:08:06 +0530
+  
+SyntaxError (C:/Users/gaura/OneDrive/Desktop/bank/app/controllers/cinfra_view_controller.rb:18: syntax error, unexpected ':', expecting keyword_end
+            render_html: "Error in Processing your req
+                        ^):
+  
+app/controllers/cinfra_view_controller.rb:18: syntax error, unexpected ':', expecting keyword_end
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 16:08:42 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 547ms (Views: 497.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-10-01 16:08:57 +0530
+Processing by CinfraViewController#new as HTML
+  Rendering cinfra_view/new.html.erb within layouts/application
+  Rendered cinfra_view/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 203ms (Views: 165.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cinfra" for 127.0.0.1 at 2018-10-01 16:09:23 +0530
+Processing by CinfraViewController#create as HTML
+  Parameters: {"authenticity_token"=>"kNnzn34I75fHJ0JS98OU5lIcu9aK+RJgeWcgcsxO7j9zWMdQTmrjb1epwCjtFy15l0t6vNA18GeBCKeBBwk0hg==", "values"=>{"itemname"=>"Access Point", "itemquantity"=>"1", "itemmanufacturer"=>"Ruckus"}, "create"=>"Submit Query"}
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `itemname' for #<CinfraViewController:0x000000000c5031e0>):
+  
+app/controllers/cinfra_view_controller.rb:11:in `create'
+Started POST "/cinfra" for 127.0.0.1 at 2018-10-01 16:10:51 +0530
+Processing by CinfraViewController#create as HTML
+  Parameters: {"authenticity_token"=>"kNnzn34I75fHJ0JS98OU5lIcu9aK+RJgeWcgcsxO7j9zWMdQTmrjb1epwCjtFy15l0t6vNA18GeBCKeBBwk0hg==", "values"=>{"itemname"=>"Access Point", "itemquantity"=>"1", "itemmanufacturer"=>"Ruckus"}, "create"=>"Submit Query"}
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 15.6ms)
+
+
+  
+NameError (undefined local variable or method `item_name' for #<CinfraViewController:0x000000000aeeeff8>):
+  
+app/controllers/cinfra_view_controller.rb:11:in `create'
+Started POST "/cinfra" for 127.0.0.1 at 2018-10-01 16:11:13 +0530
+Processing by CinfraViewController#create as HTML
+  Parameters: {"authenticity_token"=>"kNnzn34I75fHJ0JS98OU5lIcu9aK+RJgeWcgcsxO7j9zWMdQTmrjb1epwCjtFy15l0t6vNA18GeBCKeBBwk0hg==", "values"=>{"itemname"=>"Access Point", "itemquantity"=>"1", "itemmanufacturer"=>"Ruckus"}, "create"=>"Submit Query"}
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `item_name' for #<CinfraViewController:0x000000000cefddf8>):
+  
+app/controllers/cinfra_view_controller.rb:11:in `create'
+Started POST "/cinfra" for 127.0.0.1 at 2018-10-01 16:11:50 +0530
+Processing by CinfraViewController#create as HTML
+  Parameters: {"authenticity_token"=>"kNnzn34I75fHJ0JS98OU5lIcu9aK+RJgeWcgcsxO7j9zWMdQTmrjb1epwCjtFy15l0t6vNA18GeBCKeBBwk0hg==", "values"=>{"itemname"=>"Access Point", "itemquantity"=>"1", "itemmanufacturer"=>"Ruckus"}, "create"=>"Submit Query"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cinfra_view_controller.rb:15
+  [1m[36mCinfra Create (0.0ms)[0m  [1m[32mINSERT INTO "cinfras" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-01 10:41:51.401466"], ["updated_at", "2018-10-01 10:41:51.401466"]]
+  ↳ app/controllers/cinfra_view_controller.rb:15
+  [1m[35m (125.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cinfra_view_controller.rb:15
+Redirected to http://localhost:3000/cinfra
+Completed 302 Found in 156ms (ActiveRecord: 125.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 16:11:51 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 206ms (Views: 166.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 16:11:59 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 203ms (Views: 181.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-10-01 16:12:02 +0530
+Processing by CinfraViewController#new as HTML
+  Rendering cinfra_view/new.html.erb within layouts/application
+  Rendered cinfra_view/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 346ms (Views: 302.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cinfra" for 127.0.0.1 at 2018-10-01 16:12:22 +0530
+Processing by CinfraViewController#create as HTML
+  Parameters: {"authenticity_token"=>"7JZwPN/ZBr1/1zGZL4WXYFKsCpXUk7i7G47B2MJ6VHUPF0Tz77sKRe9Zs+M1US7/l/vL/45fWrzj4UYrCT2OzA==", "values"=>{"item_name"=>"Table", "quantity"=>"10", "manufacturer"=>"GreenPly"}, "create"=>"Submit Query"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cinfra_view_controller.rb:15
+  [1m[36mCinfra Create (46.9ms)[0m  [1m[32mINSERT INTO "cinfras" ("item_name", "quantity", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_name", "Table"], ["quantity", 10], ["manufacturer", "GreenPly"], ["created_at", "2018-10-01 10:42:22.580639"], ["updated_at", "2018-10-01 10:42:22.580639"]]
+  ↳ app/controllers/cinfra_view_controller.rb:15
+  [1m[35m (158.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cinfra_view_controller.rb:15
+Redirected to http://localhost:3000/cinfra
+Completed 302 Found in 221ms (ActiveRecord: 205.1ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 16:12:22 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 237ms (Views: 202.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mCinfra Destroy (93.8ms)[0m  [1m[31mDELETE FROM "cinfras" WHERE "cinfras"."id" = ?[0m  [["id", 5]]
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCinfra Update (0.0ms)[0m  [1m[33mUPDATE "cinfras" SET "id" = ?, "updated_at" = ? WHERE "cinfras"."id" = ?[0m  [["id", 5], ["updated_at", "2018-10-01 10:43:49.298278"], ["id", 6]]
+  [1m[35m (158.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-01 16:14:03 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:13
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 203ms (Views: 170.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 16:28:05 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (15.6ms)
+Completed 200 OK in 328ms (Views: 155.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:28:19 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:14
+  Rendered cinfra_view/index.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 2281ms (Views: 2214.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra/1" for 127.0.0.1 at 2018-10-05 16:28:26 +0530
+  
+ActionController::RoutingError (uninitialized constant CinfraController):
+  
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `block in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `rescue in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:42:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:29:18 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:14
+  Rendered cinfra_view/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 359ms (Views: 295.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra/1" for 127.0.0.1 at 2018-10-05 16:29:36 +0530
+Processing by CinfraViewController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cinfra_view_controller.rb:24
+  Rendering cinfra_view/show.html.erb within layouts/application
+  Rendered cinfra_view/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 344ms (Views: 251.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:29:40 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:14
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 281ms (Views: 232.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra/2" for 127.0.0.1 at 2018-10-05 16:29:41 +0530
+Processing by CinfraViewController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cinfra_view_controller.rb:24
+  Rendering cinfra_view/show.html.erb within layouts/application
+  Rendered cinfra_view/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 281ms (Views: 226.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:29:47 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:14
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 281ms (Views: 237.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-10-05 16:29:51 +0530
+Processing by CinfraViewController#new as HTML
+  Rendering cinfra_view/new.html.erb within layouts/application
+  Rendered cinfra_view/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 266ms (Views: 224.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cinfra" for 127.0.0.1 at 2018-10-05 16:30:22 +0530
+Processing by CinfraViewController#create as HTML
+  Parameters: {"authenticity_token"=>"clqip7XlE0H627hBWJoLfEc26QT2n3jxYwnzzCP+viOCsPJsr7ZOfP/b8dmbVC77lYMhfJwevNwswWrl0dVfIA==", "values"=>{"item_name"=>"Plugs", "quantity"=>"30", "manufacturer"=>"Anchor"}, "create"=>"Submit Query"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cinfra_view_controller.rb:15
+  [1m[36mCinfra Create (0.0ms)[0m  [1m[32mINSERT INTO "cinfras" ("item_name", "quantity", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_name", "Plugs"], ["quantity", 30], ["manufacturer", "Anchor"], ["created_at", "2018-10-05 11:00:23.054342"], ["updated_at", "2018-10-05 11:00:23.054342"]]
+  ↳ app/controllers/cinfra_view_controller.rb:15
+  [1m[35m (140.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cinfra_view_controller.rb:15
+Redirected to http://localhost:3000/cinfra
+Completed 302 Found in 187ms (ActiveRecord: 140.6ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:30:23 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:14
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 328ms (Views: 239.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra/6" for 127.0.0.1 at 2018-10-05 16:30:27 +0530
+Processing by CinfraViewController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cinfra_view_controller.rb:24
+  Rendering cinfra_view/show.html.erb within layouts/application
+  Rendered cinfra_view/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 297ms (Views: 238.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:30:30 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:14
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 281ms (Views: 232.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra/1" for 127.0.0.1 at 2018-10-05 16:32:31 +0530
+Processing by CinfraViewController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cinfra_view_controller.rb:24
+  Rendering cinfra_view/show.html.erb within layouts/application
+  Rendered cinfra_view/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 297ms (Views: 237.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra/2" for 127.0.0.1 at 2018-10-05 16:32:34 +0530
+Processing by CinfraViewController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cinfra_view_controller.rb:24
+  Rendering cinfra_view/show.html.erb within layouts/application
+  Rendered cinfra_view/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 297ms (Views: 248.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra/1" for 127.0.0.1 at 2018-10-05 16:33:37 +0530
+Processing by CinfraViewController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cinfra_view_controller.rb:24
+  Rendering cinfra_view/show.html.erb within layouts/application
+  Rendered cinfra_view/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 281ms (Views: 229.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:39:24 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:15
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 312ms (Views: 259.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:39:37 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:15
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 297ms (Views: 237.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfrashow/1" for 127.0.0.1 at 2018-10-05 16:39:43 +0530
+Processing by CinfraViewController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cinfra_view_controller.rb:24
+  Rendering cinfra_view/show.html.erb within layouts/application
+  Rendered cinfra_view/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 281ms (Views: 237.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:46:28 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:15
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 312ms (Views: 250.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cinfradelete/6" for 127.0.0.1 at 2018-10-05 16:46:31 +0530
+Processing by CinfraViewController#delete as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cinfra_view_controller.rb:28
+  [1m[36mCinfra Destroy (125.0ms)[0m  [1m[31mDELETE FROM "cinfras" WHERE "cinfras"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/cinfra_view_controller.rb:28
+  Rendering cinfra_view/delete.html.erb within layouts/application
+  Rendered cinfra_view/delete.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 609ms (Views: 337.3ms | ActiveRecord: 125.0ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:46:35 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:15
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 287ms (Views: 236.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-10-05 16:46:43 +0530
+Processing by CinfraViewController#new as HTML
+  Rendering cinfra_view/new.html.erb within layouts/application
+  Rendered cinfra_view/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 281ms (Views: 230.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cinfra" for 127.0.0.1 at 2018-10-05 16:47:14 +0530
+Processing by CinfraViewController#create as HTML
+  Parameters: {"authenticity_token"=>"Rknd9GyJypJ3VbP8YSohejiEvlcPnPUfR2mh09rctbC2o40/dtqXr3JV+mSi5AT96jF2L2UdMTIIoTj6KPdUsw==", "values"=>{"item_name"=>"White Board", "quantity"=>"1", "manufacturer"=>"Standard Boards ltd."}, "create"=>"Submit Query"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cinfra_view_controller.rb:15
+  [1m[36mCinfra Create (46.9ms)[0m  [1m[32mINSERT INTO "cinfras" ("item_name", "quantity", "manufacturer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_name", "White Board"], ["quantity", 1], ["manufacturer", "Standard Boards ltd."], ["created_at", "2018-10-05 11:17:14.759694"], ["updated_at", "2018-10-05 11:17:14.759694"]]
+  ↳ app/controllers/cinfra_view_controller.rb:15
+  [1m[35m (93.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cinfra_view_controller.rb:15
+Redirected to http://localhost:3000/cinfra
+Completed 302 Found in 156ms (ActiveRecord: 140.6ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:47:14 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (15.6ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:15
+  Rendered cinfra_view/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 400ms (Views: 298.3ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/cinfradelete/6" for 127.0.0.1 at 2018-10-05 16:47:25 +0530
+Processing by CinfraViewController#delete as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT  "cinfras".* FROM "cinfras" WHERE "cinfras"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cinfra_view_controller.rb:28
+  [1m[36mCinfra Destroy (93.7ms)[0m  [1m[31mDELETE FROM "cinfras" WHERE "cinfras"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/cinfra_view_controller.rb:28
+  Rendering cinfra_view/delete.html.erb within layouts/application
+  Rendered cinfra_view/delete.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 641ms (Views: 441.6ms | ActiveRecord: 93.7ms)
+
+
+Started GET "/cinfra" for 127.0.0.1 at 2018-10-05 16:47:28 +0530
+Processing by CinfraViewController#index as HTML
+  Rendering cinfra_view/index.html.erb within layouts/application
+  [1m[36mCinfra Load (0.0ms)[0m  [1m[34mSELECT "cinfras".* FROM "cinfras"[0m
+  ↳ app/views/cinfra_view/index.html.erb:15
+  Rendered cinfra_view/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 299ms (Views: 238.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-10-05 16:52:20 +0530
+Processing by CinfraViewController#new as HTML
+  Rendering cinfra_view/new.html.erb within layouts/application
+  Rendered cinfra_view/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 297ms (Views: 242.5ms | ActiveRecord: 0.0ms)
+
+
