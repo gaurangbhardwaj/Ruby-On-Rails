@@ -1,0 +1,28 @@
+<h1>Class room Information</h1>
+<table border='4'>
+ <thead>
+  <tr>
+   <th>ID</th>
+   <th>ItemName</th>
+   <th>Quantity</th>
+   <th>Manufacturer</th>
+   <th>Show Details</th>
+   <th>Delete Item</th>
+  <tr>
+ <thead>
+
+ <tbody>
+  <% @cinfras.each do |s| %>
+    <tr>
+     <td> <%= s.id %> </td>
+     <td> <%= s.item_name %> </td>
+     <td> <%= s.quantity %> </td>
+     <td> <%= s.manufacturer %> </td>
+     <td> <a href="cinfrashow/<%= s.id %>">show</td>
+     <td> <a href="cinfradelete/<%= s.id %>">delete</td>
+    </tr>
+  <% end %>
+ <tbody>
+<table>
+<br/>
+<a href="/new">Add new item</a>

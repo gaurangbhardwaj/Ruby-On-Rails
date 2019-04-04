@@ -1,0 +1,22 @@
+
+<form action="/cinfra" method="post">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+<p>
+<input type="text" name="values[item_name]" placeholder="Item name">
+</p>
+<br/><br/>
+
+<p>
+<input type="text" name="values[quantity]" placeholder="Quantity">
+</p>
+<br/><br/>
+
+<p>
+<input type="text" name="values[manufacturer]" placeholder="Manufacturer/Company">
+</p>
+<br/><br/>
+
+<input type="submit" name="create">
+
+</form>

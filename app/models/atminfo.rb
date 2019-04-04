@@ -1,0 +1,2 @@
+class Atminfo < ApplicationRecord
+end

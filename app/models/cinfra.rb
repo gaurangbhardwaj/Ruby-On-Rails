@@ -1,0 +1,2 @@
+class Cinfra < ApplicationRecord
+end

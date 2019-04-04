@@ -1,0 +1,22 @@
+<h1>Atms Information</h1>
+<table border='4'>
+ <thead>
+  <tr>
+   <th>ID</th>
+   <th>Atm Location</th>
+   <th>Available Cash</th>
+   <th>OS</th>
+  <tr>
+ <thead>
+
+ <tbody>
+  <% @atminfos.each do |s| %>
+    <tr>
+     <td> <%= s.id %> </td>
+     <td> <%= s.atmlocation %> </td>
+     <td> <%= s.availablecash %> </td>
+     <td> <%= s.os %> </td>
+    </tr>
+  <% end %>
+ <tbody>
+<table>
