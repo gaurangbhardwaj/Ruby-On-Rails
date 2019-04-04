@@ -1,4 +1,4 @@
-# Basic ROR CRUD operation with security data access
+# Basic ROR CRUD operation with secure data access
 
 * creation of controllers
 * creation of views with repect to controller
